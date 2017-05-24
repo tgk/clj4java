@@ -15,3 +15,9 @@
 (defn classB-toString
   [this]
   "I'm a B")
+
+(comment
+
+  (.toString (entrypoint.A.))
+
+  )

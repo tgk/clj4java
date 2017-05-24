@@ -38,6 +38,10 @@ nil
 :foo
 "bar"
 
+(class nil)
+(class 42)
+(class :foo)
+(class "bar")
 
 (= 42 1)
 (= "foo" "bar")
@@ -49,6 +53,9 @@ nil
 (list "foo" "bar" "baz")
 
 (conj '(:bar :baz) :foo)
+
+(to-array (list 1 2 3))
+(into-array (list 1 2 3))
 
 ;;;; Vectors
 
@@ -122,7 +129,8 @@ nil
 
   (doto (JFrame. "Hello again")
     (.setSize 200 200)
-    (.setVisible true)))
+    (.setVisible true))
+  )
 
 
 ;;; Clojure wrappers for Java libraries
